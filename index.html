@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- shortcut icon -->
+    <link rel="shortcut icon" href="assets/logo-header.png" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                sora: ['Sora', 'sans-serif'], // Sora Font
+                adlam: ['ADLaM Display', 'sans-serif'], // ADLaM Display Font
+              },
+              colors: {
+                accent: '#FFDC26',
+                black: '#111111',
+                primaryC: '#FFFFFF',
+                secondaryC: '#FFF9F4',
+                cardColor: '#F9DF8A',
+                footerColor: 'rgba(255, 220, 38, 0.50)'
+              },
+              container: {
+                center: true,  // Ensures centering (margin: 0 auto)
+                padding: '1rem', // Optional padding
+            },
+            maxWidth: {
+                'custom': '95%', // Custom max-width
+            }
+              
+            },
+          }
+        }
+    </script>
+
+      <style type="text/tailwindcss">
+        @layer utilities {
+            /* Login Button */
+            .login-btn{
+              border: 1px solid #FFDC26;
+              background-color: transparent;
+            }
+            .login-btn:hover{
+              color: #111111;
+              background-color: #FFDC26;
+            }
+            /* Register Button */
+            .register-btn{
+              border: 1px solid transparent;
+            }
+            .register-btn:hover{
+              border: 1px solid #FFDC26;
+              background-color: transparent;
+            }
+          }
+        </style>
+
+    <title>Cute Pets</title>
+</head>
+<body class="font-sora">
+  <!-- Header Section -->
+   <header>
+
+    <!-- Navbar area -->
+    <nav class="bg-secondaryC py-3 border lg:border-none border-b-zinc-600">
+      <div class="container grid grid-cols-2 lg:grid-cols-3 items-center ">
+        <!-- nav left -->
+        <div class="lg:flex lg:items-center lg:gap-3 cursor-pointer">
+          <img src="assets/logo-header.png" alt="">
+          <h4 class="hidden lg:inline-block font-semibold text-2xl">Browse<span class="text-accent">4</span>Pets</h4>
+        </div>
+        <!-- nav middle -->
+        <div class="hidden lg:block">
+          <ul class="flex justify-center gap-6 hover:*:underline *:text-lg">
+            <li><a href="">Find a pet</a></li>
+            <li><a href="">Breeds</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+        <!-- nav right -->
+        <div class="hidden lg:flex justify-end gap-4 *:text-lg">
+          <div class="icons flex items-center gap-4 *:text-xl">
+            <i class="fa-regular fa-bell cursor-pointer"></i>
+            <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+          </div>
+          <button class="login-btn btn btn-md">Login</button>
+          <button class="register-btn btn btn-md bg-accent">Register</button>
+        </div>
+        <!-- Mobile navbar icon -->
+        <div class="flex justify-end lg:hidden">
+          <i class="fa-solid fa-bars text-3xl"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero area -->
+     <div class="hero-area">
+      <div class="container">
+        <!-- hero content -->
+        <div class="border border-yellow-700 *:border-lime-500 *:border">
+          <h1 class="font-adlam capitalize text-3xl lg:text-6xl">pamper your pet,<br>because they deserve<br>the best</h1>
+          <p class="my-3 lg:text-xl lg:text-opacity-10">Discover a world of treats, toys, andessentials handpicked for your furryfriends.<br>Shop now and make tails wag with joy!</p>
+          <button class="btn btn-warning btn-sm lg:btn-md">Find a pet</button>
+        </div>
+        <!-- hero banner -->
+        <div class="border border-green-500 -mt-16 lg:-mt-80">
+          <img class="border border-red-500 w-full" src="assets/cat.png" alt="">
+        </div>
+      </div>
+     </div>
+
+  </header>
+</body>
+</html>
