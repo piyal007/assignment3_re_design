@@ -195,7 +195,7 @@
     <div class="container">
       <h2 class="font-adlam text-4xl capitalize my-10">Trending pet products</h2>
       <!-- Cards Container -->
-      <div class="cards-container grid gap-2">
+      <div class="cards-container grid gap-4 lg:grid-cols-3">
         <!-- Big Card container -->
         <div class="big-card p-10 bg-cardColor rounded-lg">
           <div>
@@ -209,7 +209,7 @@
         </div>
 
         <!-- Small Cards container -->
-        <div class="small-cards *:border *:border-gray-300 grid grid-cols-2 gap-2 *:rounded-lg *:bg-white *:shadow-lg *:px-2 py-5">
+        <div class="small-cards *:border *:border-gray-300 grid grid-cols-2 lg:grid-cols-3 gap-2 *:rounded-lg *:bg-white *:shadow-lg *:px-2 lg:col-span-2">
           <!-- card 1 -->
           <div class="card1 flex items-center py-5 gap-4">
             <!-- crd img -->
@@ -337,6 +337,24 @@
 
           <!-- card 8 -->
           <div class="card1 flex items-center py-5 gap-4">
+            <!-- crd img -->
+            <div class="rounded-lg overflow-hidden">
+              <img class="p-6 bg-orange-50" src="assets/pet-couch.png" alt="">
+            </div>
+            <!-- crd content -->
+            <div class="">
+              <div class="rating gap-2">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <p>4.5</p>
+              </div>
+              <h5 class="mb-1 font-bold text-lg">Pet Bed</h5>
+              <p class="font-semibold">$39.99</p>
+            </div>
+          
+          </div>
+
+          <!-- card 9 -->
+          <div class="card1 lg:flex items-center py-5 gap-4 hidden">
             <!-- crd img -->
             <div class="rounded-lg overflow-hidden">
               <img class="p-6 bg-orange-50" src="assets/pet-couch.png" alt="">
