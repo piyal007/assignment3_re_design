@@ -378,7 +378,7 @@
   </section>
 
   <!-- low Price Section -->
-  <section class="py-20 mb-72">
+  <section class="py-20">
     <div class="container">
       <h2 class="font-adlam text-4xl capitalize mb-5">Everyday Low Price</h2>
       <div class="card-container grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -418,38 +418,40 @@
   </section>
 
   <!-- Footer Section -->
-  <footer class="f-section mt-20 bg-cardColor relative">
+  <footer class="f-section mt-72 lg:mt-96 bg-cardColor relative">
 
-      <!-- Up Box -->
-      <div class="up-box border border-red-400 absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 container w-5/6 bg-secondaryC">
+      <!-- Pawsome News Box -->
+      <div class="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 container w-[90%] bg-secondaryC grid lg:grid-cols-2 place-items-center">
         <!-- left area -->
        <div class="cat grid place-items-center lg:p-16">
         <img class="hidden lg:grid" src="assets/cute-pet-mid.png" alt="">
         <img class="grid lg:hidden" src="assets/cute-pet-small.png" alt="">
        </div>
        <!-- right area -->
-        <div class="content grid place-content-center p-5 lg:p-0">
-          <h2 class="font-adlam text-4xl mb-4">Get Pawsome News</h2>
-          <p class="text-xl">Exclusive training tips, tricks, product deals and more.</p>
+        <div class="content grid place-content-center p-5 lg:pb-20">
+          <h2 class="font-adlam text-3xl lg:text-4xl mb-4">Get Pawsome News</h2>
+          <p class="text-md lg:text-xl">Exclusive training tips, tricks, product deals and more.</p>
           <input type="text" placeholder="Enter email" class="text-lg input input-warning full my-4" />
           <button class="btn btn-warning px-10 text-xl cursor-pointer">Subscribe</button>
         </div>
       </div>
 
-    <div class="container pt-60 border border-green-400">
+    <div class="container w-[90%] grid lg:grid-cols-3 lg:items-center pt-72">
 
       <!-- Footer logo -->
-      <div class="lgo flex items-center gap-2 pt-24">
-        <img src="assets/logo-footer.png" alt="">
-        <h4 class="text-xl">Browse<span class="text-accent">4</span>Pets</h4>
-      </div>
-      <!-- Footer Description -->
-      <div class="my-5">
-        <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+       <div class="grid items-center lg:w-4/5">
+        <div class="lgo flex items-center gap-2">
+          <img src="assets/logo-footer.png" alt="">
+          <h4 class="text-xl">Browse<span class="text-accent">4</span>Pets</h4>
+        </div>
+        <!-- Footer Description -->
+        <div class="my-5">
+          <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+        </div>
       </div>
       <!-- Footer Menu -->
        <div>
-        <ul class="flex flex-col gap-1">
+        <ul class="flex flex-col gap-1 [&_a]:cursor-pointer">
           <li><a href="">Find a pet</a></li>
           <li><a href="">Breeds</a></li>
           <li><a href="">Contact us</a></li>
